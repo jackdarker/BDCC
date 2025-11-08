@@ -140,6 +140,20 @@ func undoAllTransformations():
 	originalParts.clear()
 	originalCharData.clear()
 
+
+func undoAllTransformationsSlow():
+	# create counter-TF
+	
+	#replace current TF with counter-TF
+	effects.clear()
+	transformations.clear()
+	
+	applyAllTransformationEffects()
+	#dont delete original, maybe we need it again?
+	#originalParts.clear()
+	#originalCharData.clear()
+
+
 func makeAllTransformationsPermanent():
 	applyAllTransformationEffects()
 	effects.clear()

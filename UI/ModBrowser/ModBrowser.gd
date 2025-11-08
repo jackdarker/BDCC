@@ -21,7 +21,7 @@ func _ready():
 	pass
 
 func _on_ModBrowser_visibility_changed():
-	if(visible && !downloadedMods):
+	if(false && visible && !downloadedMods):
 		downloadedMods = true
 		var error = http_request.request("https://raw.githubusercontent.com/Alexofp/BDCCMods/main/allmods.json")
 		if error != OK:

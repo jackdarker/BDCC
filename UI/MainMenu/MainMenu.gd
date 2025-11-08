@@ -49,7 +49,7 @@ func _ready():
 
 	checkCanResume()
 	if(OPTIONS.shouldFetchGithubRelease()):
-		getNewRelease()
+		pass#getNewRelease()
 	else:
 		setGithubLabelStr("Latest github release: DISABLED", "")
 		gutHubReleaseLabel.visible = false

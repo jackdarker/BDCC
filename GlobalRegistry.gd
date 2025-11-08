@@ -517,7 +517,7 @@ func registerEverything():
 	var start = OS.get_ticks_usec()
 	loadRegistryCacheFromFile()
 	
-	startLoadingDonationData()
+	#startLoadingDonationData()
 	
 	emit_signal("loadingUpdate", 0.0/totalStages, "Modules pre-init")
 	yield(get_tree(), "idle_frame")

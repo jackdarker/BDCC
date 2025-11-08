@@ -1,6 +1,9 @@
 # Broken Dreams Correctional Center
 Text based game about being a prisoner in a space prison with a lot of adult themes. Working title is Broken Dreams Correctional Center or BDCC for short
 
+# !!! MODIFICATIONS !!!
+- had to skip http_request as they simply terminate the game (startLoadingDonationData(), getNewRelease())
+
 ### [More info about the game here](https://rahimew.itch.io/bdcc)
 
 This game is influenced a lot by other erotic text rpg games like Trials in the Tainted Space and Lilith's Throne. The idea of a scifi space prison setting came from a place inside second life called RRDC
