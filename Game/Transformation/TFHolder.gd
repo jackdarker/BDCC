@@ -142,13 +142,36 @@ func undoAllTransformations():
 
 
 func undoAllTransformationsSlow():
+	var _theChar = getChar()
+	var _part
+	var _part2
 	# create counter-TF
+	#note: bodyParts could be affected directly (boneRollPill) or by applying a species
+	#
+	for bodypartSlot in originalParts:
+		_part=originalParts[bodypartSlot]
+		match _part:
+			"penis":
+				pass
+			_:
+				pass
+		pass
 	
+	for idx in originalCharData:		#feminity:100  species:[canine]
+		_part=originalCharData[idx]
+		match idx:
+			"species":	
+				_part2 = _theChar.getSpecies()
+
+				pass
+			_:
+				pass
+		pass
 	#replace current TF with counter-TF
-	effects.clear()
-	transformations.clear()
-	
-	applyAllTransformationEffects()
+	#effects.clear()
+	#transformations.clear()
+	#startTransformation()
+	#applyAllTransformationEffects()
 	#dont delete original, maybe we need it again?
 	#originalParts.clear()
 	#originalCharData.clear()

@@ -3523,10 +3523,13 @@ func getSexGoalSubWeightModifier(_sexGoalID:String, _domID:String) -> float:
 	
 	return result
 
-func undoAllTransformations():
+func undoAllTransformations(_args:Dictionary={}):
 	var theHolder = getTFHolder()
 	if(theHolder != null):
-		theHolder.undoAllTransformations()
+		if(_args.has("slow")):
+			theHolder.undoAllTransformationsSlow()
+		else:
+			theHolder.undoAllTransformations()
 
 func makeAllTransformationsPermanent():
 	var theHolder = getTFHolder()
