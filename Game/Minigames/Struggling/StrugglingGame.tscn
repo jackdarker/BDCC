@@ -51,7 +51,6 @@ anchor_bottom = 1.0
 mouse_filter = 2
 
 [node name="Patterns" type="Node2D" parent="."]
-visible = false
 
 [node name="NextButtonTimer" type="Timer" parent="."]
 one_shot = true
